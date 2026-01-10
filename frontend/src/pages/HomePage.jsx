@@ -3,6 +3,7 @@ import { SignInButton } from "@clerk/clerk-react";
 import { Link } from "react-router";
 import { useProducts } from "../hooks/useProducts";
 import LoadingSpinner from "../components/LoadingSpinner";
+import ProductCard from "../components/ProductCard";
 
 function HomePage() {
   const { data: products, isLoading, error } = useProducts();
